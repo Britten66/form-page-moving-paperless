@@ -1,0 +1,256 @@
+/* ============================================
+   Q-Forms Hero Widget
+   White bg, #c82828 red, #1a1a1a dark
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+}
+
+html body .qf-hero {
+  background: #fff;
+  padding: 60px 24px 70px;
+}
+
+html body .qf-hero-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+html body .qf-hero-tagline {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #c82828;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+}
+
+html body .qf-hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  background: none;
+}
+
+html body .qf-hero-body {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.75;
+  margin: 0 0 12px 0;
+}
+
+html body .qf-hero-sub {
+  font-size: 0.93rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 0 0 24px 0;
+}
+
+html body .qf-hero-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0 0 28px 0;
+}
+
+html body .qf-highlight {
+  font-size: 0.88rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+html body .qf-check {
+  color: #c82828;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+html body .qf-hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+html body .qf-btn-primary {
+  background: #c82828;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 11px 26px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  display: inline-block;
+}
+
+html body .qf-btn-primary:hover {
+  background: #a01f1f;
+}
+
+html body .qf-btn-ghost {
+  background: #fff;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 11px 26px;
+  border-radius: 4px;
+  border: 1.5px solid #ddd;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+  display: inline-block;
+}
+
+html body .qf-btn-ghost:hover {
+  border-color: #c82828;
+  color: #c82828;
+}
+
+/* Card */
+html body .qf-card {
+  background: #fff;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.25s ease;
+}
+
+html body .qf-card:hover {
+  box-shadow: 0 6px 28px rgba(200, 40, 40, 0.1);
+}
+
+html body .qf-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+html body .qf-card-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+html body .qf-card-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+html body .qf-workflow {
+  padding: 18px 22px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+html body .qf-workflow-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #c82828;
+  margin-bottom: 10px;
+}
+
+html body .qf-workflow-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 12px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 0.87rem;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+html body .qf-workflow-row:last-child {
+  margin-bottom: 0;
+}
+html body .qf-workflow-row:hover {
+  background: #fff5f5;
+}
+
+html body .qf-workflow-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+html body .qf-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 18px 22px;
+  gap: 10px;
+}
+
+html body .qf-stat {
+  text-align: center;
+  padding: 12px 6px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+html body .qf-stat:hover {
+  border-color: #c82828;
+}
+
+html body .qf-stat-num {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+html body .qf-stat-label {
+  font-size: 0.7rem;
+  color: #888;
+  line-height: 1.3;
+}
+
+@media (max-width: 900px) {
+  html body .qf-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  html body .qf-hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html body .qf-hero {
+    padding: 40px 16px 50px;
+  }
+  html body .qf-hero-title {
+    font-size: 1.75rem;
+  }
+  html body .qf-hero-highlights {
+    grid-template-columns: 1fr;
+  }
+  html body .qf-stats {
+    grid-template-columns: 1fr;
+  }
+}

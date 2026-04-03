@@ -1,0 +1,134 @@
+/* ============================================
+   FireQ Main Hero Widget
+   White bg, #1a1a1a dark, #c82828 red
+   ============================================ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { background: #fff; }
+
+html body .fq-hero {
+  background: #fff;
+  padding: 60px 24px 70px;
+}
+
+html body .fq-hero-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+html body .fq-hero-title {
+  font-size: 3.8rem;
+  font-weight: 300;
+  color: #3a3a3a;
+  line-height: 1;
+  margin: 0 0 10px 0;
+  background: none;
+}
+
+html body .fq-hero-tagline {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 0 28px 0;
+}
+
+html body .fq-hero-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0 0 18px 0;
+  background: none;
+}
+
+html body .fq-hero-body {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.75;
+  margin: 0 0 24px 0;
+}
+
+/* Text links */
+html body .fq-hero-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0 0 32px 0;
+}
+
+html body .fq-hero-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 0 18px;
+  border-left: 2px solid #ccc;
+  transition: color 0.2s ease;
+}
+
+html body .fq-hero-link:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+html body .fq-hero-link:hover {
+  color: #c82828;
+}
+
+/* App store buttons */
+html body .fq-hero-apps {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+html body .fq-app-btn {
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+html body .fq-app-btn:hover {
+  opacity: 0.8;
+}
+
+html body .fq-app-btn img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* Right image */
+html body .fq-hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html body .fq-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  html body .fq-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  html body .fq-hero-title { font-size: 3rem; }
+  html body .fq-hero-heading { font-size: 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  html body .fq-hero { padding: 40px 16px 50px; }
+  html body .fq-hero-title { font-size: 2.4rem; }
+  html body .fq-hero-heading { font-size: 1.3rem; }
+}
